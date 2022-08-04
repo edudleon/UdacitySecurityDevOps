@@ -11,13 +11,13 @@ public class Helper {
 	    * @param strings
 	    * @return
 	    */
-		public static long getCount(List<String> strings){
+		public static long getCountEmpty(List<String> strings){
 			return strings.stream().filter(string->string.isEmpty()).count();
 		}
 		
 		/**
 		 * Method to get the stats of a list of numbers 
-		 * @param numbers
+		 * @param expYears
 		 * @return
 		 */
 		public static IntSummaryStatistics getStats(List<Integer> expYears) {
@@ -49,7 +49,7 @@ public class Helper {
 		 * @return
 		 */
 		public static String getMergedList(List<String> empName) {
-		   return empName.stream().filter(string ->!string.isEmpty()).collect(Collectors.joining(", "));
+		   return empName.stream().filter(string ->!string.isEmpty()).collect(Collectors.joining(" "));
 	   }
 
 		/**

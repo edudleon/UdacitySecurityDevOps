@@ -20,11 +20,11 @@ public class Test1Example {
 			
 	      System.out.println("List: " + empNames);
 			
-	      long count = Helper.getCount(empNames) ;
+	      long count = Helper.getCountEmpty(empNames) ;
 	      
 	      System.out.println("Empty Strings: " + count);
 			
-	      count = Helper.getCount(empNames);
+	      count = Helper.getStringsOfLength3(empNames);
 	      System.out.println("Strings of length 3: " + count);
 			
 	      List<String> filtered = Helper.getFilteredList(empNames);
